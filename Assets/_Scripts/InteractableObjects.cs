@@ -20,6 +20,7 @@ public class InteractableObjects : MonoBehaviour
     {
         rb.useGravity = true;
 
+<<<<<<< Updated upstream
         //Vector3 directionToTarget = (interactableDest.transform.position - transform.position).normalized;
         float forceMagnitude = 60f;
 
@@ -27,5 +28,9 @@ public class InteractableObjects : MonoBehaviour
 
         //Vector3 forwardForce = transform.position * 2f;
         //rb.AddForce (forwardForce, ForceMode.Impulse);
+=======
+        Vector3 forwardForce = transform.position * -2f;
+        rb.AddForce (forwardForce, ForceMode.Impulse);
+>>>>>>> Stashed changes
     }
 }

@@ -971,6 +971,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream:Assets/Scenes/SampleScene.unity
 --- !u!1 &1011670767
 GameObject:
   m_ObjectHideFlags: 0
@@ -1601,11 +1602,14 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 27.494, z: 0}
+=======
+>>>>>>> Stashed changes:Assets/Scenes/Prototype.unity
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 705507995}
+<<<<<<< Updated upstream:Assets/Scenes/SampleScene.unity
   - {fileID: 1686075435}
   - {fileID: 80192347}
   - {fileID: 963194228}
@@ -1619,3 +1623,6 @@ SceneRoots:
   - {fileID: 341480949}
   - {fileID: 223794078}
   - {fileID: 494149360}
+=======
+  - {fileID: 647746704}
+>>>>>>> Stashed changes:Assets/Scenes/Prototype.unity
