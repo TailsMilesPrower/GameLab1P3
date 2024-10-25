@@ -28,9 +28,8 @@ public class SunMonitor : MonoBehaviour
     {
         oppositeDirection = -1f * dirLight.transform.forward;
         // Debug.Log(oppositeDirection.ToString());
-        RaycastHit hit;
 
-        if (Physics.BoxCast(transform.position, transform.localScale * 0.25f, oppositeDirection, out hit, transform.rotation, 100f, mask)) {
+        if (Physics.BoxCast(transform.position, transform.localScale * 0.25f, oppositeDirection, out RaycastHit hit, transform.rotation, 100f, mask)) {
             Debug.DrawRay(transform.position, oppositeDirection * hit.distance, Color.green);
             playerRenderer.material.color = Color.green;
 

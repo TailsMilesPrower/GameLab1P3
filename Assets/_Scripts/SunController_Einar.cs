@@ -6,13 +6,14 @@ public class Sun2 : MonoBehaviour
 {
     public GameObject objectToRotateSun;
     //public GameObject objectToRotateCamera;
+    //public Transform player;
     Quaternion targetRotation;
-    Quaternion targetRotationCam;
+    //Quaternion targetRotationCam;
 
     private void Start()
     {
         targetRotation = Quaternion.Euler(50, 0, 0);
-        targetRotationCam = Quaternion.Euler(70, 0, -19.8f);
+        //targetRotationCam = Quaternion.LookRotation(player.position - objectToRotateCamera.transform.position, Vector3.up);
     }
 
     private void FixedUpdate()
@@ -36,15 +37,15 @@ public class Sun2 : MonoBehaviour
 
         /*if (Input.GetKey(KeyCode.Q))
         {
-            targetRotationCam = Quaternion.Euler(50, objectToRotateCamera.transform.eulerAngles.y - 0.1f, 0);
+            targetRotationCam = Quaternion.Euler(0, objectToRotateCamera.transform.eulerAngles.y - 1f, 0);
         }
         if (Input.GetKey(KeyCode.E))
         {
-            targetRotationCam = Quaternion.Euler(50, objectToRotateCamera.transform.eulerAngles.y + 0.1f, 0);
+            targetRotationCam = Quaternion.Euler(0, objectToRotateCamera.transform.eulerAngles.y + 1f, 0);
         }
-        objectToRotateCamera.transform.rotation = targetRotationCam;
+        objectToRotateCamera.transform.rotation = targetRotationCam;*/
 
-        */
+        
     }
 }
 
