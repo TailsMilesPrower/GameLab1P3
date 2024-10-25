@@ -15,7 +15,7 @@ public class Sun2 : MonoBehaviour
         targetRotationCam = Quaternion.Euler(70, 0, -19.8f);
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         CheckRotation();
     }
@@ -26,11 +26,11 @@ public class Sun2 : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Q))
         {
-            targetRotation = Quaternion.Euler(50, objectToRotateSun.transform.eulerAngles.y - 0.1f, 0);
+            targetRotation = Quaternion.Euler(50, objectToRotateSun.transform.eulerAngles.y - 1f, 0);
         }
         if (Input.GetKey(KeyCode.E))
         {
-            targetRotation = Quaternion.Euler(50, objectToRotateSun.transform.eulerAngles.y + 0.1f, 0);
+            targetRotation = Quaternion.Euler(50, objectToRotateSun.transform.eulerAngles.y + 1f, 0);
         }
         objectToRotateSun.transform.rotation = targetRotation;
 
