@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class CameraRotator : MonoBehaviour
 {
-
+    public GameObject objectToRotateCamera;
+    Quaternion targetRotationCam;
     // Start is called before the first frame update
     void Start()
     {
-
+        targetRotationCam = Quaternion.Euler(70, 0, 0);
     }
 
     // Update is called once per frame
@@ -16,12 +17,12 @@ public class CameraRotator : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Q))
         {
-            if (Input.GetKey(KeyCode.Q))
-                transform.Rotate(0, -0.1f, 0);
+            targetRotationCam = Quaternion.Euler(50, objectToRotateCamera.transform.eulerAngles.y - 0.1f, 0);
         }
         if (Input.GetKey(KeyCode.E))
         {
-            transform.Rotate(0, 0.1f, 0);
+            targetRotationCam = Quaternion.Euler(50, objectToRotateCamera.transform.eulerAngles.y + 0.1f, 0);
         }
+        objectToRotateCamera.transform.rotation = targetRotationCam;
     }
 }

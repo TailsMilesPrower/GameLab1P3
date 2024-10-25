@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerRaycast : MonoBehaviour
 {
+    //public static bool Raycast(Vector3 origin, Vector3 direction, float maxDistance = Mathf.Infinity,
+    //int layerMask = DefaultRaycastLayers, QueryTriggerInteraction queryTriggerInteraction = QueryTriggerInteraction.UseGlobal);
     public LayerMask layersToHit;
     public Transform player;
     public Transform sun;

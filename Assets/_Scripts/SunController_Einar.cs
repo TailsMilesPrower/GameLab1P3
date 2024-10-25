@@ -5,14 +5,14 @@ using UnityEngine;
 public class Sun2 : MonoBehaviour
 {
     public GameObject objectToRotateSun;
-    public GameObject objectToRotateCameraController;
+    //public GameObject objectToRotateCamera;
     Quaternion targetRotation;
     Quaternion targetRotationCam;
 
     private void Start()
     {
         targetRotation = Quaternion.Euler(50, 0, 0);
-        targetRotationCam = Quaternion.Euler(0, 0, 0);
+        targetRotationCam = Quaternion.Euler(70, 0, -19.8f);
     }
 
     private void Update()
@@ -36,13 +36,15 @@ public class Sun2 : MonoBehaviour
 
         /*if (Input.GetKey(KeyCode.Q))
         {
-            targetRotationCam = Quaternion.Euler(-70, objectToRotateCameraController.transform.eulerAngles.y - 1, 0);
+            targetRotationCam = Quaternion.Euler(50, objectToRotateCamera.transform.eulerAngles.y - 0.1f, 0);
         }
         if (Input.GetKey(KeyCode.E))
         {
-            targetRotationCam = Quaternion.Euler(-70, objectToRotateCameraController.transform.eulerAngles.y + 1, 0);
+            targetRotationCam = Quaternion.Euler(50, objectToRotateCamera.transform.eulerAngles.y + 0.1f, 0);
         }
-        objectToRotateCameraController.transform.rotation = targetRotationCam;*/
+        objectToRotateCamera.transform.rotation = targetRotationCam;
+
+        */
     }
 }
 
