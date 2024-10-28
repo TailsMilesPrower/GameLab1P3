@@ -729,7 +729,6 @@ GameObject:
   - component: {fileID: 596213549}
   - component: {fileID: 596213548}
   - component: {fileID: 596213547}
-  - component: {fileID: 596213550}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -811,24 +810,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1725019318}
   m_LocalEulerAnglesHint: {x: 60, y: 180, z: 0}
---- !u!114 &596213550
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 596213546}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41d2495f767d3d84ebaa9f1b8815a8c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 596213548}
-  player: {fileID: 629606111}
-  targetDest: {fileID: 378197480}
-  layermask:
-    serializedVersion: 2
-    m_Bits: 64
 --- !u!1 &629599353
 GameObject:
   m_ObjectHideFlags: 0
@@ -871,6 +852,29 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2642431839356716261, guid: e6a927bc15b4b8b43abbda4997b57a9a, type: 3}
   m_PrefabInstance: {fileID: 6596083917840921273}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &638943147 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7171546532078735829, guid: e6a927bc15b4b8b43abbda4997b57a9a, type: 3}
+  m_PrefabInstance: {fileID: 6596083917840921273}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &638943154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638943147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41d2495f767d3d84ebaa9f1b8815a8c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 596213548}
+  player: {fileID: 629606111}
+  targetDest: {fileID: 378197480}
+  layermask:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &721860813
 GameObject:
   m_ObjectHideFlags: 0
@@ -2008,7 +2012,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.083333336
+  m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 3d827c5d86b6e12448691cf8fb197048, type: 2}
   m_BuildHeightMesh: 0
@@ -2342,6 +2346,9 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7171546532078735829, guid: e6a927bc15b4b8b43abbda4997b57a9a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 638943154}
     - targetCorrespondingSourceObject: {fileID: 350373259710911867, guid: e6a927bc15b4b8b43abbda4997b57a9a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 543528681}
