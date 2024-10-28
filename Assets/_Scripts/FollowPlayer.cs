@@ -5,7 +5,6 @@ using UnityEngine;
 public class FollowPlayer : MonoBehaviour
 {
     public Transform player; // Reference to the player's transform
-     // Speed at which the object follows the player
 
     void FixedUpdate()
     {

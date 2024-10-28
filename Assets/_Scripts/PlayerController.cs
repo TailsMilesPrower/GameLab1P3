@@ -24,9 +24,8 @@ public class PlayerController : MonoBehaviour
         mHealthBar.SetHealth(Health);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void start()
     {
-        
+
     }
 }
