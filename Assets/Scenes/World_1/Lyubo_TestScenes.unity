@@ -1042,7 +1042,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8db588843e06ee4499107413fe95b6cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToRotateCamera: {fileID: 1956059157}
 --- !u!1001 &1604985770
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1097,7 +1096,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5927545194351394917, guid: c01b394b576ba54428755a6d51c0e0f4, type: 3}
       propertyPath: dirForce.x
-      value: 1
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 5927545194351394917, guid: c01b394b576ba54428755a6d51c0e0f4, type: 3}
       propertyPath: dirForce.z
@@ -1376,7 +1375,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.083333336
+  m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 3d827c5d86b6e12448691cf8fb197048, type: 2}
   m_BuildHeightMesh: 0
