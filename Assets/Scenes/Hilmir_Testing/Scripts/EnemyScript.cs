@@ -11,25 +11,47 @@ public class EnemyScript : MonoBehaviour
     public int index = 0;
     public bool forward = true;
     public float time;
-    // Start is called before the first frame update
-    // Tor Arne helped me with this code    
+    public bool isPlayerInRange;
+    public Transform targetObject;
+    [SerializeField] EnemyRaycast enemyRaycast;
+
+    // Tor Arne helped me with this code
+
     void Start()
     {
         SetNextWaypoint();
+        Debug.Log("Log");
+        agent.SetDestination(waypointPos[0].position);
     }
-
+    // Sprinkle messages throughout my code, and try to fix the enemy location and the enemy raycast.
     // Update is called once per frame
     void Update()
     {
-        if (DestinationReached())
+        if (isPlayerInRange == true || enemyRaycast.isPlayerInRange)
+        {
+            Debug.Log("I am chasing");
+            ChasePlayer();
+        }
+        else if (DestinationReached())
         {
             SetNextWaypoint();
         }
+    }
+
+    private void ChasePlayer()
+    {
+        transform.position = Vector3.MoveTowards(this.transform.position, targetObject.position, 10 * Time.deltaTime);
     }
     private bool DestinationReached()
     {
         return Vector3.Distance(transform.position, waypointPos[index].position)<1.7f;
     }
+
+    private void Reset()
+    {
+ 
+    }
+
     private void SetNextWaypoint()
     {
         if (forward)
@@ -48,7 +70,7 @@ public class EnemyScript : MonoBehaviour
             }
 
             // Move Character
-            agent.SetDestination(waypointPos[index].position);
+            // agent.SetDestination(waypointPos[index].position);
         }
         else
         {

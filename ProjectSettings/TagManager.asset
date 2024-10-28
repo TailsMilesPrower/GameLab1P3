@@ -6,7 +6,11 @@ TagManager:
   tags:
   - Enemy
   - Ground
+<<<<<<< Updated upstream
   - HealthBar
+=======
+  - Building
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
@@ -15,7 +19,11 @@ TagManager:
   - Water
   - UI
   - Walkable
+<<<<<<< Updated upstream
   - BlockRaycast
+=======
+  - Building
+>>>>>>> Stashed changes
   - 
   - 
   - 
