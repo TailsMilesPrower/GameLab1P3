@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/World_1/Einar_TestScenes.unity
     guid: d4fce8e522afefa4cbb9fbe281bfa352
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/World_1/VVVV.unity
     guid: 9c19cb08a904cf740832bf46a0ff37be
   m_configObjects: {}

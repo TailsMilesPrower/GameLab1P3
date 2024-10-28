@@ -458,7 +458,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 378197480}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -16.4, y: 11, z: 7.168848}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
@@ -2282,6 +2282,14 @@ PrefabInstance:
       propertyPath: objectToRotateCameraController
       value: 
       objectReference: {fileID: 596213546}
+    - target: {fileID: 1826875805041314745, guid: e6a927bc15b4b8b43abbda4997b57a9a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133937816753121992, guid: e6a927bc15b4b8b43abbda4997b57a9a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2642431839356716261, guid: e6a927bc15b4b8b43abbda4997b57a9a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.299999
@@ -2342,7 +2350,9 @@ PrefabInstance:
       propertyPath: DamageRepeatRate
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1826875805041314745, guid: e6a927bc15b4b8b43abbda4997b57a9a, type: 3}
+    - {fileID: 2133937816753121992, guid: e6a927bc15b4b8b43abbda4997b57a9a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -2364,9 +2374,9 @@ SceneRoots:
   - {fileID: 1353607021}
   - {fileID: 1871313810}
   - {fileID: 1805710702}
-  - {fileID: 378197484}
   - {fileID: 1552756145}
   - {fileID: 235231543}
   - {fileID: 6596083917840921273}
   - {fileID: 1725019318}
+  - {fileID: 378197484}
   - {fileID: 1133094085}
